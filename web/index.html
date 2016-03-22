@@ -1,0 +1,33 @@
+<html>
+	<head>
+
+		<!-- ************************ Style sheets ************************ -->
+		 <link rel = "stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		 <link rel = "stylesheet" href="./lib/bootstrap-3.3.6/css/bootstrap.min.css">
+		
+		<!-- ************* angular and bootstrap  library****************** -->
+		<script src = "./lib/jQuery/jquery-1.11.3.min.js"></script>
+		 <script src = "./lib/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+		<script src = "./lib/bower_components/angular/angular.min.js"></script>
+		<script src = "./lib/bower_components/angular-route/angular-route.min.js"></script>
+		
+		<!-- ************************ Controllers*************************** -->
+		<script src = "app-router.js"></script>
+		<script src = "./controllers/header.js"></script>
+		<script src = "controllers/sign-in.js"></script>
+
+		<!-- *************************** Services*************************** -->
+		<script src = "./services/authentication-service.js"></script>
+
+		<!-- **************************** Utility*************************** -->
+		<script src = "./util/HttpCommunicationUtil.js"></script>
+		<script src = "./util/RequestUtil.js"></script>
+
+	</head>
+
+	<body ng-app = "MainApp">
+		<div ng-include = "views/sign-in.html"></div>
+		<div ng-view></div>
+	</body>
+	
+</html>

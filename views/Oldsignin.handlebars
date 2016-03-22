@@ -1,0 +1,72 @@
+<html>
+    <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+    <body>
+    <div>
+        {{#if user}}
+            <h1>{{email}} Already used </h1>
+        {{/if}}
+        {{#if error}}
+            <h1>please fill all container </h1>
+        {{/if}}
+        {{#if success}}
+            <h1>THANK YOU !!!!!! {{name}}</h1>
+        {{else}}
+    
+        <form id="sign-in" action="/login" method="post">
+            <div>
+                <p></p>
+                <label>Emial Address:</label>
+                <input type="email" name="email"/>
+            </div>
+            <div>
+                <label>First Name:</label>
+                <input type="text" name="firstName"/>
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <input type="text" name="lastName"/>
+            </div>
+            <div>
+                <label>Mobile:</label>
+                <input type="number" name="mobile" min=7111111111 max = 999999999/>
+            </div>
+            <div>
+                <select name="country" class="countries" id="countryId">
+                <option value="">Select Country</option>
+                </select>
+            </div>
+            <div>
+                <select name="state" class="states" id="stateId">
+                <option value="">Select State</option>
+                </select>
+            </div>
+
+            <div>
+                <select name="city" class="cities" id="cityId">
+                <option value="">Select City</option>
+                </select>
+            </div>
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="http://lab.iamrohit.in/js/location.js"></script>
+            </div>
+            <div>
+                <input type="submit"  value="Log In"/>
+            </div>
+
+        </form>
+        {{/if}}
+    </div>
+    </body>
+</html>
+
+
+
+ 

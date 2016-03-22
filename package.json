@@ -1,0 +1,11 @@
+{
+  "name": "lab9",
+  "version": "1.0.0",
+  "description": "Get student Info with unique email_Id using handlerbar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubham jangir",
+  "license": "ISC"
+}
